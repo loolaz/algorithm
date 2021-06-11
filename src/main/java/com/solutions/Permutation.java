@@ -1,4 +1,4 @@
-package solutions;
+package com.solutions;
 
 import java.util.*;
 
