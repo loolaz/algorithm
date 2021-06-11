@@ -13,7 +13,10 @@ class SolutionTest {
     @Test
     public void testBasicCase() {
         List<String> permutations = permutation.getPermutations("GOD");
-        assertEquals(Arrays.asList("GOD", "GDO", "OGD", "ODG", "DGO", "DOG"), permutations);
+        Collections.sort(permutations);
+        List<String> expected = Arrays.asList("GDO", "GOD", "OGD", "ODG", "DGO", "DOG");
+        Collections.sort(expected);
+        assertEquals(expected, permutations);
     }
 
     @Test
